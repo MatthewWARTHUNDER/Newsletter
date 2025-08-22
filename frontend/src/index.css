@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-text: #FFFFFF;
+  --color-blue: #165CDE;
+  --color-background: #092456;
+  --color-black: #000000;
+  --color-lightblue: #CDDFFF
+}
+
+
+@layer base {
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(circle at center, #2563eb 5%, #000 40%);
+    font-family: sans-serif;
+  }
+}
