@@ -6,22 +6,32 @@
    - Formulário para cadastro de email.
    - Lista de benefícios/recursos da newsletter com ícones.
    - Botão de envio para prosseguir para a página de confirmação.
+   - Animações para as página formulário
+
 
 **Confirmation.jsx** (Página de confirmação)
    - Exibe mensagem de sucesso após inscrição.
    - Botão para voltar à homepage (`/`).
    - Ícone centralizado acima do texto para reforçar a confirmação.
-   - 
+   - Animações para as página comfirmação
 
 ## Tecnologias utilizadas
 
 - **React** 
 - **Tailwind CSS** (estilização)
 - **React Router DOM** (navegação entre páginas)
+- **Postman** (Teste de APIs)
+
+## Estrutura Back-end
+
+- Criação da pasta backend com express e cors.
+- Criação do arquivo db.js (conexão do banco de dados para o backend).
+- Criação do arquivo script.js (Estrutura com requisições HTTP).
+
+## Estrutura Banco de dados (Mysql)
+
+- Criação do banco de dados (com apenas uma tabela com duas colunas e duas linhas)
 
 ## Próximos passos
-- Implementar envio do email para o back-end.
-- Adicionar validação de email e mensagens de erro para duplicidade.
-- Finalizar integração com página de confirmação.
-- Melhorias de UX e animações.
+- Adicionar mensagens de erro para duplicidade.
 - Instruções de instalação e execução do projeto.
