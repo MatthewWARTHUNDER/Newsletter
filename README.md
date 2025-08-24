@@ -23,7 +23,7 @@
 
 ## Tecnologias utilizadas
 
-- **React** 
+- **React com Vite** 
 - **Tailwind CSS** (estilização)
 - **React Router DOM** (navegação entre páginas)
 - **Postman** (Teste de APIs)
