@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme {
+:root {
   --color-text: #FFFFFF;
   --color-blue: #165CDE;
   --color-background: #092456;
@@ -10,11 +10,12 @@
 
 
 @layer base {
+  
   body {
     margin: 0;
     min-height: 100vh;
-    background: radial-gradient(circle at center, #2563eb 5%, #000 40%);
-    font-family: sans-serif;
+    background: radial-gradient(circle at center, #165CDE 5%, #000 40%);
+    font-family: 'inter' ,sans-serif;
 
   }
 
@@ -66,4 +67,21 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/Fonts/Inter-Regular.woff2') format('woff2'),
+    url('./assets/Fonts/Inter-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/Fonts/Inter-Bold.woff2') format('woff2'),
+    url('./assets/Fonts/Inter-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
 }

@@ -8,44 +8,51 @@ app.use(express.json());
 app.use(cors());
 
 
-
-app.get('/email', (req, res) => {
-    db.query('SELECT * FROM CadastroEmail', (err, result) => {
-        if (err) {
-            return res.status(500).send('Erro ao buscar emails: ' + err);
-        }
-        res.status(200).json(result);
-    })
-})
-
-
+// Rota para cadastrar email
 
 app.post('/postar', (req, res) => {
     const { email } = req.body;
 
     if (!email) {
-        return res.status(500).send('Email é obrigatório')
+        return res.status(400).send('Email é obrigatório');
     }
 
-    db.query('INSERT INTO CadastroEmail (email) VALUES (?)', [email], (err, result) => {
+    db.query('SELECT * FROM CadastroEmail WHERE email = ?', [email], (err, results) => {
         if (err) {
-            return res.status(500).send('Erro ao cadastrar email:' + err);
+            return res.status(500).send('Erro ao verificar email: ' + err);
         }
-    })
 
-})
+        if (results.length > 0) {
+            return res.status(409).json({ message: 'Email já cadastrado, use outro!' });
+        }
+
+        db.query('INSERT INTO CadastroEmail (email) VALUES (?)', [email], (err, results) => {
+            if (err) {
+                return res.status(500).send('Erro ao cadastrar email: ' + err);
+            }
+
+            return res.status(200).send('Email cadastrado com sucesso!' + results);
+        });
+    });
+});
 
 
-app.delete('/excluir/:id', (req, res) => {
-    const { id } = req.params;
+// Rota para descadastrar email
 
-    if (!id) {
-        return res.status(400).send('Id é obrigatório para cancelar a inscrição');
+app.delete('/excluir/:email', (req, res) => {
+    const { email } = req.params;
+
+    if (!email) {
+        return res.status(400).send('Email é obrigatório para cancelar a inscrição');
     }
 
-    db.query('DELETE FROM CadastroEmail WHERE Id = ?', [id], (err, result) => {
+    db.query('DELETE FROM CadastroEmail WHERE Email = ?', [email], (err, result) => {
         if (err) {
             return res.status(500).send('Erro ao deletar email: ' + err);
+        }
+
+        if (result.affectedRows === 0) {
+            return res.status(404).send('Email não encontrado');
         }
 
         res.status(200).send('Email deletado com sucesso!');
@@ -56,7 +63,7 @@ app.delete('/excluir/:id', (req, res) => {
 
 
 
-
+// Iniciar o servidor
 app.listen(3000, () => {
     console.log("Servidor rodando na porta 3000");
 });

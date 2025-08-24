@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import iconeWhite from "../assets/iconeWhite.svg";
 import logomindtech from "../assets/logomindtech.svg";
 
+
 export default function Confirmation() {
     return (
         <>

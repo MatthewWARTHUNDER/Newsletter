@@ -5,6 +5,7 @@ import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Newsletter from './pages/Newsletter.jsx'
 import Confirmation from './pages/Confirmation.jsx'
+import Cancelar from './pages/Cancelar.jsx'
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />
+  },
+  {
+    path: '/Cancelar',
+    element: <Cancelar />
   },
   {
     path: '/Confirmation',

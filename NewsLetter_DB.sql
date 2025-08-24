@@ -13,3 +13,5 @@ INSERT INTO CadastroEmail (Email) VALUES(
 
 
 SELECT * FROM CadastroEmail;
+
+DROP TABLE CadastroEmail

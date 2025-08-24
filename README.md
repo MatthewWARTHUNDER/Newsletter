@@ -9,9 +9,9 @@
 
 **Confirmation.jsx** (Página de confirmação)
    - Exibe mensagem de sucesso após inscrição.
-   - Botão para voltar à homepage (`/`).
+   - Botão para voltar à homepage.
    - Ícone centralizado acima do texto para reforçar a confirmação.
-   - 
+   
 
 ## Tecnologias utilizadas
 
