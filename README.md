@@ -41,17 +41,17 @@
 ## Como rodar o projeto no frontend
 
 - no terminal do VS code abre com o powershell.
-- Depois digite "cd .\frontend\" e dê enter.
-- Logo digite npm install para instalar o arquivo node_modules e dê enter
-- Depois dê npm run dev
+- Depois digite **"cd .\frontend\"** e dê enter.
+- Logo digite **npm install** para instalar o arquivo node_modules e dê enter
+- Depois dê **npm run dev**
 - E abre o link que vai aparecer no terminal
 
 ## Como rodar o projeto no backend
 
 - no terminal do VS code abre com o powershell.
-- Depois digite "cd .\backend\" e dê enter.
-- Logo digite npm install para instalar o arquivo node_modules e dê enter
-- Depois dê npm run dev deve aparecer as mensagens: Servidor rodando na porta 3000;
+- Depois digite **"cd .\backend\"** e dê enter.
+- Logo digite **npm install** para instalar o arquivo node_modules e dê enter
+- Depois dê **npm run dev** deve aparecer as mensagens: Servidor rodando na porta 3000;
   Conectado ao banco de dados com sucesso!""
 
 ## Criação do banco de dados (Mysql)
