@@ -1,5 +1,13 @@
 # Newsletter
 
+## Tecnologias utilizadas
+
+- **React com Vite** 
+- **Tailwind CSS** (estilização)
+- **React Router DOM** (navegação entre páginas)
+- **Postman** (Teste de APIs)
+
+
 ## Estrutura do Front-end
 
 **Newsettler.jsx** (Página de inscrição)
@@ -21,12 +29,6 @@
 - Botões para cancelar a inscrição e voltar para NewsLetter.
 
 
-## Tecnologias utilizadas
-
-- **React com Vite** 
-- **Tailwind CSS** (estilização)
-- **React Router DOM** (navegação entre páginas)
-- **Postman** (Teste de APIs)
 
 ## Estrutura Back-end
 
