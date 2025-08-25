@@ -6,6 +6,9 @@
 - **Tailwind CSS** (estilização)
 - **React Router DOM** (navegação entre páginas)
 - **Postman** (Teste de APIs)
+- **Axios** (Realizar fetch do backend com o frontend)
+- **CORS** (Cross-origin Resource Sharing)
+- **Express** (facilita criar o servidor/backend)
 
 
 ## Estrutura do Front-end
