@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import { Link } from 'react-router-dom';
 import Newsletter from './pages/Newsletter';
 import Confirmation from './pages/Confirmation';
-import Footer from './components/Footer';
+
 
 function App() {
 

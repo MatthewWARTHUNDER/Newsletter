@@ -35,7 +35,7 @@ export default function Confirmation() {
                             to="/"
                             className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-150"
                         >
-                            Voltar para a Home
+                            Voltar para a NewsLetter
                         </Link>
 
                     </div>

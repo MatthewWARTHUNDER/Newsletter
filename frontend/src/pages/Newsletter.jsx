@@ -84,7 +84,7 @@ export default function Newsletter() {
                         <div className="flex gap-4">
                             <button
                                 type="submit"
-                                className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-150 cursor-pointer"
+                                className="bg-blue-600 text-white  px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-150 cursor-pointer"
                             >
                                 Assinar Newsletter
                             </button>
@@ -112,7 +112,7 @@ export default function Newsletter() {
                         <img
                             src={logomindtech}
                             alt="Logo MindTech"
-                            className="absolute bottom-1 left-1/2 transform -translate-x-1/2 max-w-xs w-1/2 animate-[slideInUp_1s_ease-in-out]"
+                            className="absolute bottom-1 left-1/2 transform -translate-x-1/2 max-w-xs w-1/2 animate-[slideInUp_1s_ease-in-out] shadow-lg "
                         />
                     </div>
                 </div>

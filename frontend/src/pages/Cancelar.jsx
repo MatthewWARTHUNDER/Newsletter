@@ -63,7 +63,7 @@ export default function Cancelar() {
                         </Link>
 
                     </form>
-                    {message && <p className="mt-4 text-center text-white">{message}</p>}
+                    {message && <p className="mt-4 text-center text-white font-semibold">{message}</p>}
                 </div>
             </div>
         </>
